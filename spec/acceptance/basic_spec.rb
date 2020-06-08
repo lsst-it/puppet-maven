@@ -25,6 +25,14 @@ describe 'maven class' do
       end
     end
 
+    # ensure tarball ownership has been changed
+    describe file('/opt/maven/apache-maven-3.6.3/bin/mvn') do
+      it { is_expected.to be_file }
+      it { is_expected.to be_owned_by 'root' }
+      it { is_expected.to be_grouped_into 'root' }
+      it { is_expected.to be_mode '755' } # serverspec does not like a leading 0
+    end
+
     # do not depend on test execution order
     describe file('/opt/maven/apache-maven-3.6.1') do
       it { is_expected.not_to exist }
@@ -61,6 +69,14 @@ describe 'maven class' do
         it { is_expected.to be_grouped_into 'root' }
         it { is_expected.to be_mode '755' } # serverspec does not like a leading 0
       end
+    end
+
+    # ensure tarball ownership has been changed
+    describe file('/opt/maven/apache-maven-3.6.1/bin/mvn') do
+      it { is_expected.to be_file }
+      it { is_expected.to be_owned_by 'root' }
+      it { is_expected.to be_grouped_into 'root' }
+      it { is_expected.to be_mode '755' } # serverspec does not like a leading 0
     end
 
     # do not depend on test execution order

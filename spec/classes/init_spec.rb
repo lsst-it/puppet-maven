@@ -25,6 +25,7 @@ describe 'maven' do
         owner: 'root',
         group: 'root',
         mode: '0755',
+        recurse: true,
       )
     end
 
