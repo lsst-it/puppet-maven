@@ -28,17 +28,10 @@ class maven (
       group   => 'root',
       mode    => '0755',
       purge   => true, # rm any other version
+      force   => true,
       recurse => true,
       backup  => false,
     },
-    $unpack_dir => {
-      ensure  => directory,
-      owner   => 'root',
-      group   => 'root',
-      mode    => '0755',
-      backup  => false,
-      require => Archive["/tmp/${tar_file}"],
-    }
   })
 
   archive { "/tmp/${tar_file}":
@@ -48,6 +41,15 @@ class maven (
     source       => $_real_url,
     creates      => $unpack_dir,
     cleanup      => true,
+  }
+
+  file { $unpack_dir:
+    ensure  => directory,
+    owner   => 'root',
+    group   => 'root',
+    mode    => '0755',
+    backup  => false,
+    require => Archive["/tmp/${tar_file}"],
   }
 
   file { '/etc/profile.d/maven.sh':
