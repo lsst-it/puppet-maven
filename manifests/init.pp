@@ -2,9 +2,13 @@
 #   Install Maven
 #
 # @param version
-#   String giving version to install.
-# @param dest
-#   String giving directory to install to (parent must exist).
+#   Version of maven to install.
+#
+# @param base_path
+#   Directory path under which to install maven versions.
+#
+# @param url
+#   Absolute URL to a maven binary tarball.
 #
 class maven (
   String                    $version   = '3.6.3',
