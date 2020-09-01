@@ -1,6 +1,6 @@
 # maven
 
-[![Build Status](https://travis-ci.org/lsst-it/puppet-maven.svg?branch=master)](https://travis-ci.org/lsst-it/puppet-maven)
+[![Build Status](https://travis-ci.com/lsst-it/puppet-maven.svg?branch=master)](https://travis-ci.com/lsst-it/puppet-maven)
 
 #### Table of Contents
 
