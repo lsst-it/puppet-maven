@@ -2,19 +2,18 @@
 
 [![Build Status](https://travis-ci.com/lsst-it/puppet-maven.svg?branch=master)](https://travis-ci.com/lsst-it/puppet-maven)
 
-#### Table of Contents
+## Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with maven](#setup)
-    * [What maven affects](#what-maven-affects)
-    * [Setup requirements](#setup-requirements)
-3. [Usage - Configuration options and additional functionality](#usage)
-4. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
+1. [Setup - The basics of getting started with maven](#setup)
+  * [What maven affects](#what-maven-affects)
+  * [Setup requirements](#setup-requirements)
+1. [Usage - Configuration options and additional functionality](#usage)
+1. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 
 ## Description
 
 Installs maven (`mvn`) from Apache official binary tarball releases.
-
 
 ## Setup
 
