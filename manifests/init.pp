@@ -15,7 +15,6 @@ class maven (
   Stdlib::Absolutepath      $base_path = '/opt/maven',
   Optional[Stdlib::HTTPUrl] $url       = undef,
 ) {
-
   $slug       = "apache-maven-${version}"
   $tar_file   = "${slug}-bin.tar.gz"
   $unpack_dir = "${base_path}/apache-maven-${version}"
