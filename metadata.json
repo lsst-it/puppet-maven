@@ -4,7 +4,7 @@
   "author": "AURA/LSST",
   "summary": "",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/lsst-it/puppet-maven",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
