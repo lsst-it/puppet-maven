@@ -2,7 +2,7 @@
   "name": "lsst-maven",
   "version": "2.0.0",
   "author": "AURA/LSST",
-  "summary": "",
+  "summary": "Installs maven (`mvn`) from Apache official binary tarball releases.",
   "license": "Apache-2.0",
   "source": "https://github.com/lsst-it/puppet-maven",
   "dependencies": [
