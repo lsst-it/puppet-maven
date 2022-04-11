@@ -5,9 +5,9 @@ require 'spec_helper_acceptance'
 describe 'maven class' do
   context 'without params' do
     let(:pp) do
-      <<-EOS
+      <<-PP
       class{ 'maven': }
-      EOS
+      PP
     end
 
     it_behaves_like 'an idempotent resource'
@@ -47,13 +47,13 @@ describe 'maven class' do
     end
   end
 
-  context 'change installed version' do
+  context 'with version param' do
     let(:pp) do
-      <<-EOS
+      <<-PP
       class{ 'maven':
         version => '3.6.1',
       }
-      EOS
+      PP
     end
 
     it_behaves_like 'an idempotent resource'
