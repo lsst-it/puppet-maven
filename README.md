@@ -1,5 +1,10 @@
 # maven
 
+[![CI](https://github.com/lsst-it/puppet-maven/actions/workflows/ci.yml/badge.svg)](https://github.com/lsst-it/puppet-maven/actions/workflows/ci.yml)
+[![markdownlint](https://github.com/lsst-it/puppet-maven/actions/workflows/markdownlint.yaml/badge.svg)](https://github.com/lsst-it/puppet-maven/actions/workflows/markdownlint.yaml)
+[![shellcheck](https://github.com/lsst-it/puppet-maven/actions/workflows/shellcheck.yaml/badge.svg)](https://github.com/lsst-it/puppet-maven/actions/workflows/shellcheck.yaml)
+[![yamllint](https://github.com/lsst-it/puppet-maven/actions/workflows/yamllint.yaml/badge.svg)](https://github.com/lsst-it/puppet-maven/actions/workflows/yamllint.yaml)
+
 ## Table of Contents
 
 1. [Description](#description)
