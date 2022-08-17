@@ -4,7 +4,7 @@ require 'spec_helper_acceptance'
 
 describe 'maven class' do
   context 'without params' do
-    let(:pp) do
+    let(:manifest) do
       <<-PP
       class{ 'maven': }
       PP
@@ -48,7 +48,7 @@ describe 'maven class' do
   end
 
   context 'with version param' do
-    let(:pp) do
+    let(:manifest) do
       <<-PP
       class{ 'maven':
         version => '3.6.1',
