@@ -15,7 +15,7 @@ describe 'maven' do
         purge: true,
         force: true,
         recurse: true,
-        backup: false,
+        backup: false
       )
     end
 
@@ -25,7 +25,7 @@ describe 'maven' do
         owner: 'root',
         group: 'root',
         mode: '0755',
-        recurse: true,
+        recurse: true
       )
     end
 
@@ -35,7 +35,7 @@ describe 'maven' do
         owner: 'root',
         group: 'root',
         mode: '0644',
-        content: "export PATH=/opt/maven/apache-maven-3.6.3/bin:${PATH}\n",
+        content: "export PATH=/opt/maven/apache-maven-3.6.3/bin:${PATH}\n"
       )
     end
 
@@ -46,7 +46,7 @@ describe 'maven' do
         extract_path: '/opt/maven',
         source: 'https://archive.apache.org/dist/maven/maven-3/3.6.3/binaries/apache-maven-3.6.3-bin.tar.gz',
         creates: '/opt/maven/apache-maven-3.6.3',
-        cleanup: true,
+        cleanup: true
       )
     end
   end
