@@ -18,11 +18,11 @@ Install Maven
 
 The following parameters are available in the `maven` class:
 
-* [`version`](#version)
-* [`base_path`](#base_path)
-* [`url`](#url)
+* [`version`](#-maven--version)
+* [`base_path`](#-maven--base_path)
+* [`url`](#-maven--url)
 
-##### <a name="version"></a>`version`
+##### <a name="-maven--version"></a>`version`
 
 Data type: `String`
 
@@ -30,7 +30,7 @@ Version of maven to install.
 
 Default value: `'3.6.3'`
 
-##### <a name="base_path"></a>`base_path`
+##### <a name="-maven--base_path"></a>`base_path`
 
 Data type: `Stdlib::Absolutepath`
 
@@ -38,11 +38,11 @@ Directory path under which to install maven versions.
 
 Default value: `'/opt/maven'`
 
-##### <a name="url"></a>`url`
+##### <a name="-maven--url"></a>`url`
 
 Data type: `Optional[Stdlib::HTTPUrl]`
 
 Absolute URL to a maven binary tarball.
 
-Default value: ``undef``
+Default value: `undef`
 
