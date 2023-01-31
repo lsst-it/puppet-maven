@@ -1,6 +1,6 @@
 {
   "name": "lsst-maven",
-  "version": "2.1.0",
+  "version": "2.1.1-rc0",
   "author": "AURA/LSST",
   "summary": "Installs maven (`mvn`) from Apache official binary tarball releases.",
   "license": "Apache-2.0",
