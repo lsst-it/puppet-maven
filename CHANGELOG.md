@@ -4,6 +4,17 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.2.0](https://github.com/lsst-it/puppet-maven/tree/v3.2.0) (2025-10-28)
+
+[Full Changelog](https://github.com/lsst-it/puppet-maven/compare/v3.1.0...v3.2.0)
+
+**Implemented enhancements:**
+
+- \(metadata.json\) Bump archive to include v8 [\#42](https://github.com/lsst-it/puppet-maven/pull/42) ([badenerb](https://github.com/badenerb))
+- Update actions/labeler action to v6 [\#37](https://github.com/lsst-it/puppet-maven/pull/37) ([renovate[bot]](https://github.com/apps/renovate))
+- Update actions/checkout action to v5 [\#35](https://github.com/lsst-it/puppet-maven/pull/35) ([renovate[bot]](https://github.com/apps/renovate))
+- \(puppet-maven\) add license file [\#24](https://github.com/lsst-it/puppet-maven/pull/24) ([dtapiacl](https://github.com/dtapiacl))
+
 ## [v3.1.0](https://github.com/lsst-it/puppet-maven/tree/v3.1.0) (2023-08-22)
 
 [Full Changelog](https://github.com/lsst-it/puppet-maven/compare/v3.0.0...v3.1.0)
