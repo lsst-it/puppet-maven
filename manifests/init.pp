@@ -25,16 +25,16 @@ class maven (
   }
 
   ensure_resources('file', {
-      $base_path  => {
-        ensure  => directory,
-        owner   => 'root',
-        group   => 'root',
-        mode    => '0755',
-        purge   => true, # rm any other version
-        force   => true,
-        recurse => true,
-        backup  => false,
-      },
+    $base_path  => {
+      ensure  => directory,
+      owner   => 'root',
+      group   => 'root',
+      mode    => '0755',
+      purge   => true, # rm any other version
+      force   => true,
+      recurse => true,
+      backup  => false,
+    },
   })
 
   archive { "/tmp/${tar_file}":
